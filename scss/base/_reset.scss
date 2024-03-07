@@ -8,13 +8,14 @@
 }
 
 .container {
-  // max-width: // your device width;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 a {
   text-decoration: none;
+  background: transparent;
 }
 
 ul{
@@ -27,6 +28,7 @@ button{
 }
 
 body {
+  background-color: $bg-primary;
   font-family:"Helvetica Neue medium" , sans-serif;
 }
 

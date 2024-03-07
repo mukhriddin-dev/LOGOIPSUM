@@ -1,3 +1,24 @@
+header .nav__list--item a::after {
+  background: hsl(197, 100%, 71%);
+  background: linear-gradient(90deg, hsl(197, 100%, 71%) 0%, hsl(252, 100%, 72%) 100%);
+  background: -moz-linear-gradient(90deg, hsl(197, 100%, 71%) 0%, hsl(252, 100%, 72%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(197, 100%, 71%) 0%, hsl(252, 100%, 72%) 100%);
+}
+
+header .nav__btn--item {
+  padding: 10px 18px;
+  border-radius: 100px;
+  background: #fff;
+  color: #8c72ff;
+  transition: all 0.3s ease;
+}
+header .nav__btn--item:hover {
+  background: #8c72ff;
+}
+header .nav__btn--item:hover a {
+  color: #fff;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -317,12 +338,14 @@ template {
 }
 
 .container {
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 a {
   text-decoration: none;
+  background: transparent;
 }
 
 ul {
@@ -335,6 +358,7 @@ button {
 }
 
 body {
+  background-color: #15083e;
   font-family: "Helvetica Neue medium", sans-serif;
 }
 
@@ -369,4 +393,56 @@ body {
   background: linear-gradient(to left, #6dc1dc 2%, #a690fc 40%, #fc96bb 82%, #ffc397 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+}
+header .nav {
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav__logo {
+  position: relative;
+}
+header .nav__list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+header .nav__list--item {
+  font-family: "Helvetica Neue medium";
+  font-size: 16px;
+}
+header .nav__list--item a {
+  color: #fff;
+}
+header .nav__list--item a:hover {
+  color: #6cd3ff;
+  transition: all 0.3s ease;
+}
+header .nav__list--item a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+header .nav__list--item a:hover::after {
+  opacity: 1;
+}
+header .nav__btn {
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }/*# sourceMappingURL=main.css.map */

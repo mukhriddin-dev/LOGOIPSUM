@@ -19,5 +19,26 @@
     hsla(252, 100%, 72%, 1) 100%
   );
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6BD4FF", endColorstr="#8C70FF", GradientType=1 );
 }
+
+
+// -------- btn --------
+
+%btnPrimary{
+  padding: 10px 18px;
+  border-radius: 100px;
+  background: #fff;
+  color:$text-primary ;
+  transition: $transition-primary;
+  &:hover {
+    background: $btn-primary;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+
+
+
+
