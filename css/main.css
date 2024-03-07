@@ -5,17 +5,17 @@ header .nav__list--item a::after {
   background: -webkit-linear-gradient(90deg, hsl(197, 100%, 71%) 0%, hsl(252, 100%, 72%) 100%);
 }
 
-header .nav__btn--item {
+#intro .wrapper__left button, header .nav__btn--item {
   padding: 10px 18px;
   border-radius: 100px;
   background: #fff;
   color: #8c72ff;
   transition: all 0.3s ease;
 }
-header .nav__btn--item:hover {
+#intro .wrapper__left button:hover, header .nav__btn--item:hover {
   background: #8c72ff;
 }
-header .nav__btn--item:hover a {
+#intro .wrapper__left button:hover a, header .nav__btn--item:hover a {
   color: #fff;
 }
 
@@ -445,4 +445,55 @@ header .nav__btn {
   display: flex;
   align-items: center;
   gap: 13px;
+}
+#intro {
+  padding-top: 154px;
+}
+#intro .wrapper {
+  display: flex;
+  gap: 100px;
+  align-items: start;
+}
+#intro .wrapper__left {
+  max-width: 563px;
+}
+#intro .wrapper__left h1 {
+  font-size: 54px;
+  color: #fff;
+}
+#intro .wrapper__left p {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 48px;
+}
+#intro .wrapper__left button {
+  padding: 18px 36px;
+}
+#intro .wrapper__right {
+  flex-grow: 2;
+  position: relative;
+  background-image: url("../../assets/images/cicle.svg");
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#intro .wrapper__right img {
+  position: absolute;
+}
+#intro .wrapper__right img:nth-child(1) {
+  top: -40px;
+  left: 44px;
+}
+#intro .wrapper__right img:nth-child(2) {
+  bottom: -100px;
+  left: -76px;
+}
+#intro .wrapper__right img:nth-child(3) {
+  top: -55px;
+  right: 40px;
+}
+#intro .wrapper__right img:nth-child(4) {
+  bottom: -20px;
+  right: 40px;
 }/*# sourceMappingURL=main.css.map */
